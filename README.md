@@ -1,2 +1,1 @@
-# web101
-Front end Development 101
+[Ders-01: Frontend Geliştirme ve Html-Css'e Giriş](./Ders-01/README.md)
