@@ -169,8 +169,6 @@ Frontend geliştiriciler, kullanıcı arayüzlerini tasarlar ve kodlar. Bu, hem 
 - **head Etiketi:** HTML sayfasına dahil etmek istediğiniz ve sayfanın izleyicilere göstereceği içerik olmayan her şey için bir kap görevi görür. Buna anahtar kelimeler ve arama sonuçlarında görünecek bir sayfa açıklaması (SEO), içeriği şekillendirmek için CSS, karakter seti bildirimleri ve daha fazlası dahildir. Serinin bir sonraki makalesinde bu konuda daha fazla bilgi edineceksiniz.
 - **body Etiketi: Bu, metin, resim, video, oyun, çalınabilir ses parçaları veya başka her şey dahil olmak üzere sayfada görüntülenen tüm içeriği içerir.**
 
-!https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/Getting_started/grumpy-cat-small.png
-
 ```html
 <!DOCTYPE html>
 <html>
@@ -194,7 +192,16 @@ Frontend geliştiriciler, kullanıcı arayüzlerini tasarlar ve kodlar. Bu, hem 
 - **Görsel Etiketi:** `<img src="image.jpg" alt="Description">`
 - **Liste Etiketleri:** Sırasız `<ul><li></li></ul>`, Sıralı `<ol><li></li></ol>`
 
-**4. HTML Semantiği**
+    ![Tag Yapısı](https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/Getting_started/grumpy-cat-small.png)
+
+**4. HTML Elementlerinin Özellikler**
+
+- Özellikler, öğe hakkında bilgi sağlar. Açılış etiketinin geri kalanı gibi bu özellik de içerikte görünmez ancak hem gören hem de görme engelli (yardımcı teknolojiler ve arama motorları) kullanıcılarınıza içeriğin nasıl görüneceğini tanımlamaya yardımcı olur.
+
+    ![Attribute Yapısı](https://web.dev/static/learn/html/overview/image/an-opening-tag-attribute-363effa33af66_1920.png)
+
+
+**5. HTML Semantiği**
 
 - **Semantik HTML:** Tarayıcılar ve geliştiriciler için daha anlamlı hale getirir.
 - **Örnekler:**
@@ -205,11 +212,7 @@ Frontend geliştiriciler, kullanıcı arayüzlerini tasarlar ve kodlar. Bu, hem 
     - **Footer:** `<footer></footer>`
     - **Header:** `<header></header>`
 
-**5. HTML Elementlerinin Özellikler**
-
-- Özellikler, öğe hakkında bilgi sağlar. Açılış etiketinin geri kalanı gibi bu özellik de içerikte görünmez ancak hem gören hem de görme engelli (yardımcı teknolojiler ve arama motorları) kullanıcılarınıza içeriğin nasıl görüneceğini tanımlamaya yardımcı olur.
-
-!https://web.dev/static/learn/html/overview/image/an-opening-tag-attribute-363effa33af66_1920.png
+    ![Semantic Html Örneği](https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiJnp5jBUlXTjj-AgoqYdPNAH0i4XvyOWeJLl3IVYwLzApd5vonev2Z5NPNggLRtp7GbseNUjKb8B5b0mzdvT3o_GS-3g-NGgcxdsUEjbVFWwbC4dp7n71k0w_GWl-qH_voeHf-LZfMjjKpdW8OEDpMIhG0azdNt9FAJEy5vBclZepigSPH7QdvXV-wpc4/s627/SemanticHTML.jpg)
 
 ### CSS Temelleri
 
