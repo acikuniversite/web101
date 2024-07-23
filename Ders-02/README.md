@@ -317,6 +317,9 @@
 - **Tanım:** Farklı ekran boyutlarına ve cihazlara uyum sağlayan web tasarımı.
 - **Doğası:** Kullanıcı deneyimini iyileştirmek için esnek ve dinamik yerleşim düzenleri kullanır.
 
+![Ekran Boyutları](https://i.pinimg.com/originals/74/71/f1/7471f15602f673c1c58b235e11439e1e.png)
+
+
 **2. Media Queries Kullanımı**
 
 - **Tanım:** Ekran boyutlarına göre stil tanımlamayı sağlar.
