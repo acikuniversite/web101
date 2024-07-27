@@ -1,0 +1,325 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('./navbar.css');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+
+}
+
+:root {
+    font-synthesis: none;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+
+    --primary: #f0f0f0;
+    --secondary: #191919;
+    --white: #f0f0f0;
+    --black: #191919;
+    --blue: #377acc;
+    --green: #5e8166;
+    --grey-1: #333333;
+    --grey-2: #707070;
+    --grey-3: #a0a0a0;
+    --grey-4: #cccccc;
+    --grey-5: #e0e0e0;
+
+    /*Font Sizes*/
+    --font-main-header: 30px;
+    --font-header: 20px;
+    --font-text: 16px;
+    --font-detail: 12px;
+    --font-min: 10px;
+
+    /*Transitions*/
+    --all-03s: all 0.3s;
+
+    --navbar-height: 60px;
+}
+
+.title {
+    font-size: var(--font-main-header);
+    font-weight: bold;
+    margin: 20px;
+}
+
+.flex-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.flex-item {
+    background-color: lightcoral;
+    width: 100px;
+    height: 100px;
+    padding: 20px;
+    margin: 10px;
+}
+
+@media (max-width: 600px) {
+    .flex-item {
+        background-color: aqua;
+        width: 100%;
+    }
+}
+
+
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    grid-template-rows: repeat(2, 100px);
+    gap: 10px;
+    padding: 10px;
+}
+
+.grid-item {
+    background-color: lightblue;
+    padding: 20px;
+    text-align: center;
+}
+
+
+.kutu {
+    width: 200px;
+    height: 200px;
+    background-color: darkcyan;
+    transition: all 0.5s;
+}
+
+.kutu:hover {
+    background-color: coral;
+    width: 500px;
+    /* border-radius: 50%; */
+}
+
+
+.animasyon-kutu {
+    width: 200px;
+    height: 200px;
+    background-color: darkcyan;
+    /* animation: renkdegis 2s infinite alternate; */
+}
+
+@keyframes renkdegis {
+    from {
+        background-color: darkcyan;
+    }
+
+    to {
+        background-color: crimson;
+    }
+}
+
+@keyframes example {
+    0% {
+        top: -20px;
+        animation-timing-function: ease-in;
+    }
+
+    34% {
+        transform: scale(1, 1);
+    }
+
+    35% {
+        transform: scale(1.1, 0.5);
+        top: 50px;
+        animation-timing-function: ease-out;
+    }
+
+    45% {
+        transform: scale(1, 1);
+    }
+
+    90%,
+    100% {
+        top: -20px;
+    }
+}
+
+.animasyon-container {
+    position: relative;
+    min-height: 300px;
+}
+
+.box {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: lightblue;
+    animation: example 2s infinite;
+}
+
+
+
+/*Kart Örneği*/
+
+.kart-container {
+    height: calc(100vh - var(--navbar-height));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.kart {
+    width: 600px;
+    height: 250px;
+    border-radius: 20px;
+    border: 1px solid #2d2d2d;
+    display: flex;
+}
+
+.kart-resim {
+    width: 50%;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.kart-resim>img {
+    width: 95%;
+    aspect-ratio: 5 / 4;
+    object-fit: cover;
+    border-radius: 20px;
+    transition: var(--all-03s);
+}
+
+.kart-resim>img:hover {
+    transform: scale(1.1);
+}
+
+.kart-metin {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 10px;
+    font-size: 16px;
+    text-align: justify;
+}
+
+.kart-isim {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.kart-aciklama {}
+
+.kart-butonlar {
+    display: flex;
+    justify-content: end;
+    gap: 5px;
+}
+
+.kart-butonlar button {
+    outline: none;
+    border: none;
+    cursor: pointer;
+    padding: 5px 10px;
+    width: 100px;
+    min-width: 25%;
+    transition: var(--all-03s);
+    border-radius: 5px;
+
+}
+
+.kart-butonlar button:hover {
+    filter: brightness(0.8);
+}
+
+.kart-butonlar>.vazgec {
+    background-color: tomato;
+    color: white;
+}
+
+.kart-butonlar>.kabul {
+    background-color: steelblue;
+    color: white;
+}
+
+@media (max-width: 768px) {
+    .kart {
+        flex-wrap: wrap;
+        height: 500px;
+    }
+
+    .kart-resim {
+        width: 100%;
+    }
+
+    .kart-resim>img {
+        max-height: 250px;
+    }
+
+    .kart-metin {
+        width: 100%;
+    }
+
+    .kart-butonlar {
+        justify-content: center;
+        flex-direction: column-reverse;
+        gap: 10px;
+    }
+
+    .kart-butonlar button {
+        width: 100%;
+    }
+}
+
+/*Galeri Örnek*/
+
+.galeri-container {
+    height: calc(100vh - var(--navbar-height));
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.galeri {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+.galeri .img {
+    width: 50px;
+    height: 300px;
+    overflow: hidden;
+    filter: brightness(0.5) blur(2px);
+    transition: var(--all-03s);
+}
+
+.img {
+    width: 50px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+    transition: var(--all-03s);
+
+}
+
+.img:hover {
+    height: 400px;
+    width: 250px;
+    filter: brightness(1) blur(0px);
+}
+
+.img:hover+.img {
+    filter: brightness(0.8) blur(1px);
+    height: 350px;
+    width: 100px;
+}
+
+.img:has(+.img:hover) {
+    filter: brightness(0.8) blur(1px);
+    height: 350px;
+    width: 100px;
+}
