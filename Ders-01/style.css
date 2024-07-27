@@ -1,0 +1,29 @@
+p {
+    background: turquoise;
+    border-radius: 10px;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+h3 {
+    color: blueviolet;
+}
+
+.p-class {
+    background: tomato;
+    font-weight: bold;
+    border: 10px solid black;
+}
+
+#p1 {
+    background: salmon;
+}
+
+.kutu{
+    width: 100px;
+    height: 100px;
+    background: turquoise;
+
+    padding:10px;
+    margin:50px;
+}
