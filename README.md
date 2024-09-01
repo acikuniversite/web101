@@ -5,3 +5,5 @@
 [Ders-03: JavaScript Temelleri ve ES6](./Ders-03/README.md)
 
 [Ders-04: React’e Giriş, Bileşenler, Props ve State](./Ders-04/README.md)
+
+[Ders-05: React’ta TypeScript, Yaşam Döngüsü (Lifecycle) ve Hooklar](./Ders-05/README.md)
