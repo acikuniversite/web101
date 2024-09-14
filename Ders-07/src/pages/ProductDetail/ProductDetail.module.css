@@ -1,0 +1,131 @@
+.productDetailContainer {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    padding: 10px;
+}
+
+.productDetail {
+    width: 60%;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+    border-radius: 10px;
+    box-shadow: 0px 2px 16px var(--grey-5);
+    overflow: hidden;
+    cursor: default;
+}
+
+.image {
+    border-radius: 10px 10px 0 0;
+    padding: 20px;
+    flex: 1;
+    position: relative;
+    overflow: hidden;
+}
+
+.image>img {
+    transition: var(--all-03s);
+    display: inline;
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
+    border-radius: 10px;
+}
+
+.image>img {
+    opacity: .7;
+    animation: skeleton-loading 1s linear infinite alternate;
+}
+
+@keyframes skeleton-loading {
+    0% {
+        background-color: hsl(200, 20%, 70%);
+    }
+
+    100% {
+        background-color: hsl(200, 20%, 95%);
+    }
+}
+
+.content {
+    transition: var(--all-03s);
+    border-radius: 0 0 10px 10px;
+    padding: 10px 20px;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+.content * {
+    margin: 0;
+    padding: 0;
+}
+
+.productName {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.productName>p:first-child {
+    font-weight: bold;
+}
+
+.price {
+    font-weight: bold;
+    color: var(--blue);
+}
+
+.carBtn {
+    margin: 10px 0;
+    justify-content: flex-end;
+    transition: var(--all-03s);
+    width: 100%;
+}
+
+.carBtn>button {
+    transition: var(--all-03s);
+    width: 100%;
+    padding: 10px 30px;
+    border: 1px solid var(--primary);
+    border-radius: 5px;
+    background-color: var(--blue);
+    color: var(--white);
+    cursor: pointer;
+}
+
+.carBtn>button:hover {
+    filter: brightness(0.8);
+}
+
+.description {
+    max-height: 300px;
+    overflow-y: auto;
+}
+
+
+@media (max-width: 767px) {
+    .productDetailContainer {
+        flex-direction: column;
+    }
+
+    .productDetail {
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .productDetail {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .content {
+        width: 100%;
+    }
+    .description{
+        max-height: 200px;
+    }
+}
