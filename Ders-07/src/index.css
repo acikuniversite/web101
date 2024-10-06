@@ -1,0 +1,180 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap');
+
+:root {
+  color-scheme: light dark;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  /*Colors*/
+  --primary: #f0f0f0;
+  --secondary: #191919;
+
+  --white: #f0f0f0;
+  --black: #191919;
+  --blue: #2A59FE;
+  --green: #78866b;
+  --grey-1: #333333;
+  --grey-2: #707070;
+  --grey-3: #a0a0a0;
+  --grey-4: #cccccc;
+  --grey-5: #e0e0e0;
+
+
+  /*Font Sizes*/
+  --font-main-header: 30px;
+  --font-header: 20px;
+  --font-text: 16px;
+  --font-detail: 12px;
+  --font-min: 10px;
+
+  /*Transitions*/
+  --all-03s: all 0.3s;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+
+  font-family: "Montserrat";
+  font-size: var(--font-text);
+}
+
+body {
+  background-color: var(--primary);
+  color: var(--secondary);
+  overflow-x: hidden;
+}
+
+.col-1 {
+  width: 8.33333333%;
+}
+
+.col-2 {
+  width: 16.66666667%;
+}
+
+.col-3 {
+  width: 25%;
+}
+
+.col-4 {
+  width: 33.33333333%;
+}
+
+.col-5 {
+  width: 41.66666667%;
+}
+
+.col-6 {
+  width: 50%;
+}
+
+.col-7 {
+  width: 58.33333333%;
+}
+
+.col-8 {
+  width: 66.66666667%;
+}
+
+.col-9 {
+  width: 75%;
+}
+
+.col-10 {
+  width: 83.33333333%;
+}
+
+.col-11 {
+  width: 91.66666667%;
+}
+
+.col-12 {
+  width: 100%;
+}
+
+@media (max-width: 767px) {
+
+  .col-1,
+  .col-2 {
+    width: 16.66666667%;
+  }
+
+  .col-3,
+  .col-4 {
+    width: 33.33333333%;
+  }
+
+  .col-5,
+  .col-6 {
+    width: 50%;
+  }
+
+  .col-7,
+  .col-8 {
+    width: 66.66666667%;
+  }
+
+  .col-9,
+  .col-10 {
+    width: 83.33333333%;
+  }
+
+  .col-11,
+  .col-12 {
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+
+  .col-1,
+  .col-2,
+  .col-3,
+  .col-4,
+  .col-5,
+  .col-6,
+  .col-7,
+  .col-8,
+  .col-9,
+  .col-10,
+  .col-11,
+  .col-12 {
+    width: 100%;
+  }
+}
+
+[data-theme="dark"] {
+  --primary: #191919;
+  --secondary: #f0f0f0;
+  --grey-1: #e0e0e0;
+  --grey-2: #cccccc;
+  --grey-3: #a0a0a0;
+  --grey-4: #707070;
+  --grey-5: #333333;
+}
+
+
+
+/*Scroll Style*/
+/*Track*/
+*::-webkit-scrollbar {
+  width: 8px;
+}
+
+/* Handle */
+*::-webkit-scrollbar-track,
+*::-webkit-scrollbar-thumb {
+  background: transparent;
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+*:hover::-webkit-scrollbar-thumb,
+*::-webkit-scrollbar-thumb:hover {
+  background: var(--grey-3);
+}

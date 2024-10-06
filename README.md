@@ -9,3 +9,5 @@
 [Ders-05: React’ta TypeScript, Yaşam Döngüsü (Lifecycle) ve Hooklar](./Ders-05/README.md)
 
 [Ders-06: React’ta Context API, React-Router ve State Management](./Ders-06/README.md)
+
+[Ders-07: Örnek Bir Proje](./Ders-07/README.md)

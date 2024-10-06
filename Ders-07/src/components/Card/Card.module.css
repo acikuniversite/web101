@@ -1,0 +1,94 @@
+.card {
+    height: 300px;
+    border-radius: 10px;
+    box-shadow: 0px 2px 16px var(--grey-5);
+    cursor: default;
+}
+
+.card:hover>.cardImg>img {
+    transform: scale(1.1);
+}
+
+.cardImg {
+    border-radius: 10px 10px 0 0;
+    padding: 20px;
+    height: 50%;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+.cardImg>img {
+    transition: var(--all-03s);
+    display: inline;
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.cardImg>img {
+    opacity: .7;
+    animation: skeleton-loading 1s linear infinite alternate;
+}
+
+@keyframes skeleton-loading {
+    0% {
+        background-color: hsl(200, 20%, 70%);
+    }
+
+    100% {
+        background-color: hsl(200, 20%, 95%);
+    }
+}
+
+.cardContent {
+    transition: var(--all-03s);
+    border-radius: 0 0 10px 10px;
+    padding: 10px 20px;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+.cardContent * {
+    margin: 0;
+    padding: 0;
+}
+
+.productName {
+    flex: 1;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    width: 100%;
+}
+.productName>p:first-child {
+    font-weight: bold;
+}
+.cardPrice {
+    font-weight: bold;
+    color: var(--blue);
+}
+
+.basket {
+    justify-content: flex-end;
+    transition: var(--all-03s);
+    width: 100%;
+}
+
+.basket>button {
+    transition: var(--all-03s);
+    width: 100%;
+    padding: 10px 30px;
+    border: 1px solid var(--primary);
+    border-radius: 5px;
+    background-color: var(--blue);
+    color: var(--white);
+    cursor: pointer;
+}
+
+.basket>button:hover {
+    filter: brightness(0.8);
+}

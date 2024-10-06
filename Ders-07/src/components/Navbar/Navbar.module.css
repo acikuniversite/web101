@@ -1,0 +1,148 @@
+.navbar-container {
+    user-select: none;
+    position: fixed;
+    height: calc(100vh - 65px);
+    margin: 0 0 5px 0;
+    padding: 0 8px 20px 0;
+    top: 60px;
+    width: 260px;
+    background-color: var(--primary);
+    transition: var(--all-03s);
+    z-index: 10;
+    overflow: hidden;
+}
+
+.navbar {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.navbar-container * {
+    background: transparent;
+    color: var(--secondary);
+    text-decoration: none;
+    list-style: none;
+}
+
+.navbar-container a,
+.navbar-container span {
+    font-size: var(--font-text);
+    /* font-size: calc(var(--font-header) - (var(--font-text)/2)); */
+}
+
+.navbar-container *:hover>a {
+    color: var(--primary);
+}
+
+
+.navbarHeader {
+    display: flex;
+    align-items: center;
+    font-weight: bolder;
+    width: 280px;
+    height: 60px;
+    padding-left: 12px;
+}
+
+.navbarHeader>a {
+    padding: 5px;
+    text-decoration: none;
+    color: var(--secondary);
+    display: flex;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    font-size: var(--font-main-header);
+}
+
+.navbarHeader img {
+    height: 30px;
+    width: 30px;
+    margin-right: 5px;
+}
+
+
+.navbarList {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+
+.navbarDarkModeContainer>input {
+    display: none;
+}
+
+.navbarDarkModeContainer {
+    display: flex;
+    padding: 8px;
+    height: 40px;
+    width: 40px;
+    min-width: 40px;
+    cursor: pointer;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+
+.navbarDarkModeBtn {
+    text-align: center;
+    height: 100%;
+    width: 100%;
+}
+
+.navbarDarkModeBtn:before {
+    content: "\263E";
+    color: var(--secondary);
+}
+
+.navbarDarkModeContainer>input:checked+.navbarDarkModeBtn:before {
+    content: "\263C";
+}
+
+.navbarProfile {
+    position: relative;
+    padding: 5px;
+    color: var(--primary);
+}
+
+.navbarProfile>img {
+    color: var(--primary);
+    cursor: pointer;
+}
+
+.navbarProfile+span {
+    color: var(--secondary);
+}
+
+.searchBar>label {
+    position: relative;
+    cursor: text;
+    min-width: 50px;
+}
+
+.searchBar>label>input {
+    margin: 5px 8px;
+    line-height: 1.2rem;
+    padding: 5px 5px 5px 28px;
+    outline: none;
+    border: none;
+    background-color: var(--grey-5);
+    border-radius: 5px;
+    color: var(--secondary);
+}
+
+.searchBar>label:before {
+    position: absolute;
+    left: 18px;
+    top: -4px;
+    background-color: transparent;
+    content: "\26B2";
+    transform: rotate(-45deg);
+    font-weight: bold;
+    color: var(--blue);
+    font-size: var(--font-header);
+}
